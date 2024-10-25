@@ -75,7 +75,7 @@ You can upload a `.sql` file containing your database schema. The app will tempo
 ## Technologies Used
 
 - **[Streamlit](https://streamlit.io/)** - Frontend framework
-- **[GroqCloud]((https://console.groq.com/playground)/)** - GPT model for natural language processing
+- **[GroqCloud](https://console.groq.com/playground/)** - GPT model for natural language processing
 - **[SQLAlchemy](https://www.sqlalchemy.org/)** - Database interaction
 - **[MySQL](https://www.mysql.com/)** - Backend database
 
