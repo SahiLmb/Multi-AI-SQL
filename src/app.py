@@ -1,3 +1,5 @@
+import os
+import tempfile
 from dotenv import load_dotenv
 from langchain_core.messages import AIMessage, HumanMessage
 from langchain_core.prompts import ChatPromptTemplate
@@ -88,9 +90,6 @@ if "chat_history" not in st.session_state:
         AIMessage(content="Hello! I'm a SQL chatbot. Ask me anything about your queries.")
     ]
 
-# Load environment variables
-load_dotenv()
-
 st.set_page_config(page_title="Chat with MySQL", page_icon=":speech_balloon:")
 
 st.title("Chat with MySQL db")
@@ -106,6 +105,17 @@ with st.sidebar:
     password = st.text_input("Password", type="password", value="admin", key="Password")
     database = st.text_input("Database", value="Chinook", key="Database")
     
+        # Upload an SQL file option
+    uploaded_file = st.file_uploader("Upload your .sql database file", type=["sql"])
+    
+    if uploaded_file is not None:
+        # Create a temporary directory to store the file
+        with tempfile.NamedTemporaryFile(delete=False) as tmp_file:
+            tmp_file.write(uploaded_file.read())
+            temp_sql_file_path = tmp_file.name
+            
+        st.write(f"File uploaded and saved to temporary directory: {temp_sql_file_path}")
+
     # Button to connect to the database
     if st.button("Connect to DB"):
         with st.spinner("Connecting..."):
