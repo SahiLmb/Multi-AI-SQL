@@ -1,7 +1,3 @@
-Here's a **GitHub README** template for your Streamlit app that allows users to interact with a MySQL database by chatting with it:
-
----
-
 # Chat with MySQL - AI-Powered SQL Query Generator
 
 This Streamlit-based application allows users to chat with a MySQL database and interact with it using natural language. The app is powered by an AI model that interprets user queries, generates corresponding SQL queries, and returns the results in a conversational format.
@@ -101,9 +97,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 For any questions or issues, feel free to contact me:
 
-- **GitHub:** [your-github-profile](https://github.com/your-username)
-- **Email:** your-email@example.com
-
+- **GitHub:** [SahiLmb](https://github.com/SahiLmb)
 ---
 
-This should provide a good starting point for your app's **GitHub README**. You can modify the demo link, GitHub profile, and other sections as needed. Let me know if you'd like to adjust or expand any part of it!
