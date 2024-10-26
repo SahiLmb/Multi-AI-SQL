@@ -102,7 +102,7 @@ with st.sidebar:
     host = st.text_input("Host", value="sahildb-1.cto6i8wqy48t.us-east-1.rds.amazonaws.com", key="Host")
     port = st.text_input("Port", value="3306", key="Port")
     user = st.text_input("User", value="sahildb1", key="User")
-    password = st.text_input("Password", type="password", value="admin1234", key="Password")
+    password = st.text_input("Password", type="password", value="admin", key="Password")
     database = st.text_input("Database", value="Chinook", key="Database")
     
     # Button to connect to the database
