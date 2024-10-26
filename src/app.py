@@ -99,10 +99,10 @@ with st.sidebar:
     st.write("This is an AI-based chat application that connects MySQL db and lets user chat with the database")
     
     # Input fields
-    host = st.text_input("Host", value="localhost", key="Host")
+    host = st.text_input("Host", value="sahildb-1.cto6i8wqy48t.us-east-1.rds.amazonaws.com", key="Host")
     port = st.text_input("Port", value="3306", key="Port")
-    user = st.text_input("User", value="sahilb", key="User")
-    password = st.text_input("Password", type="password", value="admin", key="Password")
+    user = st.text_input("User", value="sahildb1", key="User")
+    password = st.text_input("Password", type="password", value="admin1234", key="Password")
     database = st.text_input("Database", value="Chinook", key="Database")
     
     # Button to connect to the database
