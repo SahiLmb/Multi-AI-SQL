@@ -16,7 +16,7 @@ def init_database(user: str, password: str, host: str, port: str, database: str)
 # SQL Chain
 def get_sql_chain(db):
     template = """
-     You are a data analyst at a company. You are interacting with a user who is asking you questions about the company's database.
+    You are a data analyst at a company. You are interacting with a user who is asking you questions about the company's database.
     Based on the table schema below, write a SQL query that would answer the user's question. Take the conversation history into account.
     <SCHEMA>{schema}</SCHEMA>
     
@@ -99,9 +99,9 @@ with st.sidebar:
     st.write("This is an AI-based chat application that connects MySQL db and lets user chat with the database")
     
     # Input fields
-    host = st.text_input("Host", value="sahildb-1.cto6i8wqy48t.us-east-1.rds.amazonaws.com", key="Host")
+    host = st.text_input("Host", value="localhost", key="Host")
     port = st.text_input("Port", value="3306", key="Port")
-    user = st.text_input("User", value="sahildb1", key="User")
+    user = st.text_input("User", value="sahilb", key="User")
     password = st.text_input("Password", type="password", value="admin", key="Password")
     database = st.text_input("Database", value="Chinook", key="Database")
     
