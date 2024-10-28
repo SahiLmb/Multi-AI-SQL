@@ -23,6 +23,7 @@ def get_sql_chain(db):
     Conversation History: {chat_history}
     
     Write only the SQL query and nothing else. Do not wrap the SQL query in any other text, not even backticks.
+    If there are any ambiguous columns (e.g., multiple tables with a 'Name' column), use table aliases (like 'a.Name' or 'g.Name') to specify the source table.
     
     For example:
     Question: which 3 artists have the most tracks?
